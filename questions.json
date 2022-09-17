@@ -1,0 +1,26 @@
+[
+  {
+    "question": "가장 좋은 음식은?",
+    "choice1": "햄버거",
+    "choice2": "피자",
+    "choice3": "떡볶이&모둠튀김&어묵",
+    "choice4": "초밥",
+    "answer": 1
+  },
+  {
+    "question": "재밌는 놀이는?",
+    "choice1": "오목",
+    "choice2": "PUBG",
+    "choice3": "ZeroSivert",
+    "choice4": "LOL",
+    "answer": 3
+  },
+  {
+    "question": "정말 예쁜 shoe는?",
+    "choice1": "Jordan 1 Low",
+    "choice2": "Dunk High",
+    "choice3": "Dunk Low",
+    "choice4": "Jordan 1 High",
+    "answer": 4
+  }
+]
