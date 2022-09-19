@@ -38,6 +38,8 @@
 #hud {
   display: flex;
   justify-content: space-between;
+  margin-top: 0rem;
+  height: 9rem;
 }
 
 .hud-prefix {
