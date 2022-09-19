@@ -40,7 +40,7 @@ h1>span {
 
 h2 {
     font-size: 4.2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     font-weight: 700;
 }
 
@@ -107,7 +107,6 @@ p {
     max-width: 80rem;
     margin: 0 auto;
     padding: 2rem;
-    margin-bottom: 2rem;
 }
 
 .container>* {
