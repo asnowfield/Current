@@ -82,3 +82,13 @@
     transform: rotate(360deg);
   }
 }
+
+/* 광고 */
+.cmtext_ad {
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  background-color: #F8FAFB;
+  text-align: left;
+  letter-spacing: 0;
+}

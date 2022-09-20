@@ -68,6 +68,9 @@ p {
 .center {
     text-align: center;
 }
+.top{
+    top:0;
+}
 
 /*버튼*/
 
