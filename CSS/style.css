@@ -71,6 +71,9 @@ p {
 .top{
     top:0;
 }
+.inline{
+    display: inline;
+}
 
 /*버튼*/
 
@@ -106,10 +109,9 @@ p {
     height: 60vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     max-width: 80rem;
     margin: 0 auto;
-    padding: 2rem;
 }
 
 .container>* {
