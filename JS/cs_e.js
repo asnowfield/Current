@@ -44,8 +44,8 @@ fetch(
   .catch((err) => {
     console.error(err);
   });
-//문제 변수!!
-const CORRECT_BONUS = 10;
+//문제 변수!!!
+const CORRECT_BONUS = 1;
 const MAX_QUESTIONS = 10;
 
 startGame = () => {
@@ -53,18 +53,20 @@ startGame = () => {
   score = 0;
   availableQuesions = [...questions];
   getNewQuestion();
-  game.classList.remove('hidden');
   loader.classList.add('hidden');
 };
 
 getNewQuestion = () => {
   if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+    finalScore.innerText = score;
     localStorage.setItem('mostRecentScore', score);
-    return window.location.assign('../HTML/end_global.html');
+    game.classList.add('hidden');
+    end.classList.remove('hidden');
+    //return window.location.assign('../HTML/end_global.html');
   }
   questionCounter++;
   progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
-  progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
+  progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 101}%`;
 
   const questionIndex = Math.floor(Math.random() * availableQuesions.length);
   currentQuestion = availableQuesions[questionIndex];
@@ -99,7 +101,7 @@ choices.forEach((choice) => {
     setTimeout(() => {
       selectedChoice.parentElement.classList.remove(classToApply);
       getNewQuestion();
-    }, 1000);
+    }, 500);
   });
 });
 

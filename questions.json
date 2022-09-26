@@ -22,5 +22,14 @@
     "choice3": "Dunk Low",
     "choice4": "Jordan 1 High",
     "answer": 4
+  },
+  {
+    "question": "정말 예쁜 shoe는?",
+    "choice1": "/images/다운로드.jpg",
+    "choice2": "/images/다운로드.jpg",
+    "choice3": "/images/다운로드.jpg",
+    "choice4": "/images/다운로드.jpg",
+    "img":"/iamges/다운로드.jpg",
+    "answer": 4
   }
 ]

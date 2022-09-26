@@ -1,93 +1,91 @@
 /* 선택지 */
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+.flex-center {
+	justify-content: center;
+	align-items: center;
+}
+.justify-center {
+	justify-content: center;
+}
+.hidden {
+	display: none;
+}
+.margin-top{
+	margin-top: 16px;
+}
 .choice-container {
-  display: flex;
-  margin-bottom: 0.5rem;
-  width: 100%;
-  font-size: 1.8rem;
-  border: 0.1rem solid rgb(20, 103, 5, 0.848);
-  background-color: #b6ffab;
+	display: flex;
+	margin-bottom: 0.5rem;
+	width: 100%;
+	font-size: 1.8rem;
+	border: 0.1rem solid rgb(20, 103, 5, 0.848);
+	background-color: #449d44;
+	border-radius: 0.42rem 0.42rem 0.42rem 0.42rem;
 }
-
 .choice-container:hover {
-  cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 rgba(20, 103, 5, 0.848);
-  transform: translateY(-0.1rem);
-  transition: transform 150ms;
+	cursor: pointer;
+	box-shadow: 0 0.4rem 1.4rem 0 rgba(20, 103, 5, 0.848);
+	transform: translateY(-0.1rem);
+	transition: transform 150ms;
 }
-
 .choice-prefix {
-  padding: 0.5rem 0.5rem;
-  background-color: #0a4800;
-  color: #b6ffab;
+	padding: 0.5rem 0.5rem;
+	background-color: #0a4800;
+	color: #b6ffab;
+	margin-bottom: 0px;
+	border-radius: 0.42rem 0.42rem 0.42rem 0.42rem;
 }
-
 .choice-text {
-  width: 100%;
+	width: 100%;
+	margin-bottom: 0px;
 }
-
 .correct {
-  background-color: #756effe0;
+	background-color: #756effe0;
 }
-
 .incorrect {
-  background-color: #dc3545;
+	background-color: #dc3545;
 }
-
-/*흠*/
-
-#hud {
-  display: flex;
-  justify-content: space-between;
-  height:12rem;
-}
-
 .hud-prefix {
-  text-align: center;
-  font-size: 2rem;
+	text-align: center;
+	font-size: 2rem;
+	margin-bottom: 0px;
+	font-family: "Poppins", sans-serif;
 }
-
 .hud-main-text {
-  text-align: center;
+	text-align: center;
+	font-family: "Poppins", sans-serif;
 }
-
 #progressBar {
-  width: 20rem;
-  height: 4rem;
-  border: 0.3rem solid #0a4800;
-  margin-top: 1.5rem;
+	width: 20rem;
+	height: 0.5rem;
+	margin-top: 1.5rem;
+	border-radius: 0.42rem 0.42rem 0.42rem 0.42rem;
+  background-color: antiquewhite;
 }
-
 #progressBarFull {
-  height: 3.4rem;
-  background-color: #0a4800;
-  width: 0%;
+	height: 0.5rem;
+	background-color: #0a4800;
+	width: 0%;
+	border-radius: 0.42rem 0.42rem 0.42rem 0.42rem;
 }
-
-/*로딩화면*/
-#loader {
-  border: 1.6rem solid #b6ffab;
-  border-radius: 50%;
-  border-top: 1.6rem solid #0a4800;
-  width: 12rem;
-  height: 12rem;
-  animation: spin 1s linear infinite;
+#hud {
+	display: flex;
+	justify-content: space-between;
+	height:7rem;
 }
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+/* High score */
+#highScoresList {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 4rem;
 }
-
-/* 광고 */
-.cmtext_ad {
-  position: relative;
-  width: 100%;
-  min-height: 100px;
-  background-color: #F8FAFB;
-  text-align: left;
-  letter-spacing: 0;
+.high-score {
+	font-size: 1.8rem;
+	margin-bottom: 0.5rem;
+}
+.high-score:hover {
+	transform: scale(1.025);
 }

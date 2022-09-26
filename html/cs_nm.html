@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="icon" type="image/png" href="../images/favicon.png" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- SEO -->
+  <meta name="description" content="당신은! 얼마나 많은 지식을 기억하는가! 정말 재밌는 퀴즈를 알아보자~! 세상에서 가장 맛있는 음식은 뭘까?">
+  <meta name="keywords" content="퀴즈, 정말, 명지대, snowfield, 정보통신공학과, ICT, SW, Quiz">
+  <meta name="author" content="snowfield">
+  <!-- 카톡 페이스북 SEO -->
+  <meta property=" og:locale" content="ko">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="정말? 퀴즈! Oh? Quiz!">
+  <meta property="og:description" content="당신은! 얼마나 많은 지식을 기억하는가! 정말 재밌는 퀴즈를 알아보자~! 세상에서 가장 맛있는 음식은 뭘까?">
+  <meta property="og:site_name" content="정말? 퀴즈! Oh? Quiz!">
+  <meta property="og:url" content="http://snowfield.cf">
+  <meta property="og:image" content="../images/custom/Hamburger.png">
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="627" />
+  <!-- 트위터 SEO -->
+  <meta name="twitter:card" content="website">
+  <meta name="twitter:url" content="http://snowfield.cf/">
+  <meta name="twitter:title" content="정말? 퀴즈! Oh? Quiz!">
+  <meta name="twitter:description" content="당신은! 얼마나 많은 지식을 기억하는가! 정말 재밌는 퀴즈를 알아보자~! 세상에서 가장 맛있는 음식은 뭘까?">
+  <meta name="twitter:image" content="../images/custom/Hamburger.png">
+  <title>정말? 퀴즈!</title>
+  <link rel="stylesheet" href="/css/custom.css">
+  <link rel="stylesheet" href="/css/game.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+
+
+
+<body>
+  <nav class="bg-invisible bg-dark">
+    <a href="/index.html"><img src="/images/mcnc_logo_w.png" width="100" height="30" alt=""></a>
+  </nav>
+
+
+  <img src="/images/main_02.gif" width="100%" class="img-fluid" alt="...">
+
+
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="/html/sf.html">Snowfield</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/html/cs_ez.html">ComSci_EZ</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/html/cs_nm.html">ComSci_NM</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/html/cs_hd.html">ComSci_HD</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/html/highscore.html">HighScoresList</a>
+    </li>
+  </ul>
+
+  <section id="game" class="background-grey">
+    <div class="container">
+      <div class="justify-center flex-column">
+        <div id="hud">
+          <div id="hud-item">
+            <p id="progressText" class="hud-prefix">문제 수!</p>
+            <div id="progressBar">
+              <div id="progressBarFull"></div>
+            </div>
+          </div>
+          <div id="hud-item">
+            <a class="hud-prefix">몇개 맞췄어!</a>
+            <h1 class="hud-main-text" id="score">0</h1>
+          </div>
+        </div>
+        <h2 id="question" class="text-center"></h2>
+        <div class="choice-container">
+          <p class="choice-prefix">A</p>
+          <p class="choice-text text-center" data-number="1"></p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">B</p>
+          <p class="choice-text text-center" data-number="2"></p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">C</p>
+          <p class="choice-text text-center" data-number="3"></p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">D</p>
+          <p class="choice-text text-center" data-number="4"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="end" class="background-grey hidden">
+    <div class="container">
+      <div class="flex-center flex-column">
+        <h1 id="finalScore"></h1>
+        <form>
+          <input type="text" name="username" id="username" placeholder="username" autocomplete="off" />
+          <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>짱 알리기!</button>
+        </form>
+        <a class="btn" href="/html/cs_nm.html">당장 다시 담비기!</a>
+        <a class="btn" href="/index.html">나중에 덤비기!</a>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="/js/java.js"></script>
+  <script src="/js/cs_n.js"></script>
+  <script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="/js/end.js"></script>
+
+</body>
+<footer class="container bg-dark" style="width: 100%; height:100px">
+  <p class="float-end"><a href="#">UP</a></p>
+</footer>
+<ins class="kakao_ad_area cmtext_ad" style="display:none;" data-ad-unit="DAN-eKr3UyRSmh9759Zt" data-ad-width="100%"
+  data-ad-height="50"></ins>
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+<ins class="kakao_ad_area cmtext_ad" style="display:none;" data-ad-unit="DAN-4KeEwDgj3LbMNAbf" data-ad-width="100%"
+  data-ad-height="100"></ins>
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+<div class="inline">
+  <ins class="kakao_ad_area cmtext_ad" style="display:none;" data-ad-unit="DAN-uzOdutubHPfcNtwR" data-ad-width="100%"
+    data-ad-height="250"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+  <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-Mnz5x2kIsLqefcNh" data-ad-width="300"
+    data-ad-height="250"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+  <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-Ve1oPNhXXEfkBUSK" data-ad-width="250"
+    data-ad-height="250"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+
+</html>

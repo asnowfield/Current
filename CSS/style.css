@@ -1,232 +1,188 @@
 :root {
-    background-color: #87be7e;
-    font-size: 62.5%;
+  --bs-invisible: #ffffff2e;
+}
+.navbar {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
+}
+.carousel-indicators {
+  margin-bottom: 0rem;
 }
 
-* {
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #135f07;
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
 }
+
+
 
 body {
-    margin: 1.5rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #135f07;
-    background-color: #87be7e;
+  margin: 0px;
+  padding: 0px;
 }
 
-h1,
-h2,
-h3,
-h4 {
-    margin-bottom: 1rem;
+/* main */
+header {
+  height: 60px;
+  z-index: 10;
 }
 
-h1 {
-    font-size: 5.4rem;
-    color: #135f07;
-    margin-bottom: 5rem;
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
-h1>span {
-    font-size: 2.4rem;
-    font-weight: 500;
+nav {
+  width: 100%;
+  z-index: 10;
+  position: absolute;
 }
 
-h2 {
-    font-size: 4.2rem;
-    margin-bottom: 2rem;
-    font-weight: 700;
+nav div {
+  color: white;
+  font-size: 2rem;
+  line-height: 60px;
+  position: absolute;
+  left: 2%;
+  visibility: hidden;
 }
 
-h3 {
-    font-size: 2.8rem;
-    font-weight: 500;
+
+
+.snip1577 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #fff;
+  text-align: left;
+  font-size: 16px;
+  background: #000;
 }
 
-p {
-    color: #135f07;
+.snip1577 *,
+.snip1577:before,
+.snip1577:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
-.search-bar {
-    width: 100%;
+.snip1577 img {
+  max-width: 100%;
+  backface-visibility: hidden;
+  vertical-align: top;
 }
 
-.wrapper {
-    display: inline;
+.snip1577:before,
+.snip1577:after {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  content: '';
+  background-color: #fff;
+  z-index: 1;
+  opacity: 0;
 }
 
-.margin {
-    margin: 1rem;
+.snip1577:before {
+  width: 0;
+  height: 1px;
 }
 
-.center {
-    text-align: center;
+.snip1577:after {
+  height: 0;
+  width: 1px;
 }
 
-.top {
-    top: 0;
+.snip1577 figcaption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 15px 20px;
 }
 
-.inline {
-    display: inline;
+.snip1577 h3,
+.snip1577 h4 {
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: normal;
+  opacity: 0;
 }
 
-/*버튼*/
-
-.btn {
-    font-size: 1.8rem;
-    padding: 1rem 0;
-    width: 100%;
-    max-width: 20rem;
-    text-align: center;
-    border: 0.1rem solid #135f07;
-    margin-bottom: 1rem;
-    text-decoration: none;
-    color: #135f07;
-    background-color: #c1e9bb;
+.snip1577 h4 {
+  font-size: .8em;
+  text-transform: uppercase;
 }
 
-.btn:hover {
-    cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(16, 99, 19, 0.742);
-    transform: translateY(-0.1rem);
-    transition: transform 150ms;
+.snip1577 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
-.btn[disabled]:hover {
-    cursor: not-allowed;
-    box-shadow: none;
-    transform: none;
+.snip1577:hover img,
+.snip1577.hover img {
+  zoom: 1;
+  filter: alpha(opacity=20);
+  -webkit-opacity: 0.2;
+  opacity: 0.2;
 }
 
-/*유틸리티*/
-
-.container {
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    max-width: 80rem;
-    margin: 0 auto;
+.snip1577:hover:before,
+.snip1577.hover:before,
+.snip1577:hover:after,
+.snip1577.hover:after {
+  opacity: 1;
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
 }
 
-.container>* {
-    width: 100%;
+.snip1577:hover:before,
+.snip1577.hover:before {
+  width: 40px;
 }
 
-.flex-column {
-    display: flex;
-    flex-direction: column;
+.snip1577:hover:after,
+.snip1577.hover:after {
+  height: 40px;
 }
 
-.flex-center {
-    justify-content: center;
-    align-items: center;
+.snip1577:hover h3,
+.snip1577.hover h3,
+.snip1577:hover h4,
+.snip1577.hover h4 {
+  opacity: 1;
 }
 
-.justify-center {
-    justify-content: center;
+.snip1577:hover h3,
+.snip1577.hover h3 {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
 }
 
-.text-center {
-    text-align: center;
-}
-
-.hidden {
-    display: none;
-}
-
-/*로딩*/
-form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-input {
-    margin-bottom: 1rem;
-    width: 20rem;
-    padding: 1.5rem;
-    font-size: 1.8rem;
-    border: none;
-    box-shadow: 0 0.1rem 1.4rem 0 rgb(29, 67, 21);
-}
-
-input::placeholder {
-    color: rgb(94, 94, 94);
-}
-
-/* 로딩 아이콘 */
-#loader {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 1;
-    width: 120px;
-    height: 120px;
-    margin: -76px 0 0 -76px;
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid #000000;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
-}
-
-@-webkit-keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-.animate-bottom {
-    position: relative;
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 1s;
-    animation-name: animatebottom;
-    animation-duration: 1s
-}
-
-@-webkit-keyframes animatebottom {
-    from {
-        bottom: -100px;
-        opacity: 0
-    }
-
-    to {
-        bottom: 0px;
-        opacity: 1
-    }
-}
-
-@keyframes animatebottom {
-    from {
-        bottom: -100px;
-        opacity: 0
-    }
-
-    to {
-        bottom: 0;
-        opacity: 1
-    }
+.snip1577:hover h4,
+.snip1577.hover h4 {
+  -webkit-transition-delay: 0.35s;
+  transition-delay: 0.35s;
 }
