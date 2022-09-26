@@ -46,9 +46,9 @@
   <img src="/images/main_02.gif" width="100%" class="img-fluid" alt="...">
 
 
-  <ul class="nav justify-content-center">
+  <ul class="nav nav-pills nav-fill">
     <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="/html/sf.html">Snowfield</a>
+      <a class="nav-link" href="/html/sf.html">Snowfield</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="/html/cs_ez.html">ComSci_EZ</a>
@@ -57,46 +57,65 @@
       <a class="nav-link" href="/html/cs_nm.html">ComSci_NM</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="/html/cs_hd.html">ComSci_HD</a>
+      <a class="nav-link active" aria-current="page" href="/html/cs_hd.html">ComSci_HD</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="/html/highscore.html">HighScoresList</a>
     </li>
   </ul>
 
-  <section id="game" class="background-grey">
-    <div class="container">
-      <div class="justify-center flex-column">
-        <div id="hud">
-          <div id="hud-item">
-            <p id="progressText" class="hud-prefix">문제 수!</p>
-            <div id="progressBar">
-              <div id="progressBarFull"></div>
+  <section id="game">
+    <div class="justify-center text-bg-secondary p-3 text-center">
+      <div class="row">
+        <div id="hud-item" class="col-sm-6">
+          <p id="progressText" class="hud-prefix">문제 수!</p>
+          <div id="progressBar">
+            <div id="progressBarFull"></div>
+          </div>
+        </div>
+
+        <div id="hud-item" class="col-sm-6">
+          <p class="hud-prefix">몇개 맞췄어!</p>
+          <h1 class="hud-main-text" id="score">0</h1>
+        </div>
+        <div class="col-12">
+          <h2 id="question" class="text-center"></h2>
+          <div class="choice-container">
+            <p class="choice-prefix">1</p>
+            <p class="choice-text" data-number="1"></p>
+          </div>
+          <div class="choice-container">
+            <p class="choice-prefix">2</p>
+            <p class="choice-text" data-number="2"></p>
+          </div>
+          <div class="choice-container">
+            <p class="choice-prefix">3</p>
+            <p class="choice-text" data-number="3"></p>
+          </div>
+          <div class="choice-container">
+            <p class="choice-prefix">4</p>
+            <p class="choice-text" data-number="4"></p>
+          </div>
+        </div>
+
+        <section id="end" class="text-bg-secondary p-3 hidden col-12">
+          <div class="container">
+            <div class="flex-center flex-column">
+              <h1 id="finalScore"></h1>
+              <form>
+                <input type="text" name="username" id="username" placeholder="username" autocomplete="off" />
+                <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>짱
+                  알리기!</button>
+              </form>
+              <a class="btn" href="/html/cs_hd.html">당장 다시 담비기!</a>
+              <a class="btn" href="/index.html">나중에 덤비기!</a>
             </div>
           </div>
-          <div id="hud-item">
-            <a class="hud-prefix">몇개 맞췄어!</a>
-            <h1 class="hud-main-text" id="score">0</h1>
-          </div>
-        </div>
-        <h2 id="question" class="text-center"></h2>
-        <div class="choice-container">
-          <p class="choice-prefix">A</p>
-          <p class="choice-text text-center" data-number="1"></p>
-        </div>
-        <div class="choice-container">
-          <p class="choice-prefix">B</p>
-          <p class="choice-text text-center" data-number="2"></p>
-        </div>
-        <div class="choice-container">
-          <p class="choice-prefix">C</p>
-          <p class="choice-text text-center" data-number="3"></p>
-        </div>
-        <div class="choice-container">
-          <p class="choice-prefix">D</p>
-          <p class="choice-text text-center" data-number="4"></p>
-        </div>
+        </section>
+
       </div>
+    </div>
+
     </div>
   </section>
 

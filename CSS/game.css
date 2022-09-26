@@ -67,14 +67,11 @@
 }
 #progressBarFull {
 	height: 0.5rem;
-	background-color: #0a4800;
+	background-color: #13328e;
 	width: 0%;
 	border-radius: 0.42rem 0.42rem 0.42rem 0.42rem;
 }
 #hud {
-	display: flex;
-	justify-content: space-between;
-	height:7rem;
 }
 /* High score */
 #highScoresList {
