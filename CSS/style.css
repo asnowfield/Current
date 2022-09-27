@@ -1,6 +1,3 @@
-:root {
-  --bs-invisible: #ffffff2e;
-}
 .navbar {
   position: absolute;
   display: flex;
