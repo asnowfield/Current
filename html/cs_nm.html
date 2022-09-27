@@ -37,7 +37,7 @@
 
 
 
-<body>
+<body class="bg-secondary">
   <nav>
     <a href="/index.html"><img src="/images/mcnc_logo_w.png" width="100" height="30" alt=""></a>
   </nav>
@@ -76,10 +76,10 @@
 
         <div id="hud-item" class="col-sm-6">
           <p class="hud-prefix">몇개 맞췄어!</p>
-          <h1 class="hud-main-text" id="score">0</h1>
+          <p class="hud-main-text" id="score">0</p>
         </div>
         <div class="col-12">
-          <h2 id="question" class="text-center"></h2>
+          <p id="question" class="text-center"></p>
           <div class="choice-container">
             <p class="choice-prefix">1</p>
             <p class="choice-text" data-number="1"></p>
@@ -98,21 +98,6 @@
           </div>
         </div>
 
-        <section id="end" class="text-bg-secondary p-3 hidden col-12">
-          <div class="container">
-            <div class="flex-center flex-column">
-              <h1 id="finalScore"></h1>
-              <form>
-                <input type="text" name="username" id="username" placeholder="username" autocomplete="off" />
-                <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>짱
-                  알리기!</button>
-              </form>
-              <a class="btn" href="/html/cs_nm.html">당장 다시 담비기!</a>
-              <a class="btn" href="/index.html">나중에 덤비기!</a>
-            </div>
-          </div>
-        </section>
-
       </div>
     </div>
 
@@ -120,7 +105,6 @@
   </section>
 
 
-  <script src="/js/java.js"></script>
   <script src="/js/cs_n.js"></script>
   <script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
   <script src="/js/end.js"></script>

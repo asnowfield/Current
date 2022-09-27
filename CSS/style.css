@@ -1,3 +1,11 @@
+.nav {
+  --bs-nav-link-color: #0dfd33 !important;
+  --bs-nav-link-hover-color: #ca9f0a !important;
+}
+.nav-pills {
+  --bs-nav-pills-link-active-color: #fff !important;
+  --bs-nav-pills-link-active-bg: #819a59 !important;
+}
 .navbar {
   position: absolute;
   display: flex;
@@ -6,6 +14,7 @@
   justify-content: space-between;
   padding: 0px;
 }
+
 .carousel-indicators {
   margin-bottom: 0rem;
 }
@@ -21,7 +30,9 @@
   -webkit-overflow-scrolling: touch;
 }
 
-
+p {
+  color: antiquewhite;
+}
 
 body {
   margin: 0px;
@@ -55,8 +66,6 @@ nav div {
   left: 2%;
   visibility: hidden;
 }
-
-
 
 .snip1577 {
   font-family: 'Montserrat', Arial, sans-serif;

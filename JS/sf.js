@@ -3,7 +3,6 @@ const choices = Array.from(document.getElementsByClassName('choice-text'));
 const progressText = document.getElementById('progressText');
 const scoreText = document.getElementById('score');
 const progressBarFull = document.getElementById('progressBarFull');
-const loader = document.getElementById('loader');
 const game = document.getElementById('game');
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -34,19 +33,15 @@ startGame = () => {
 	availableQuesions = [...questions];
 	getNewQuestion();
 	game.classList.remove('hidden');
-	loader.classList.add('hidden');
 };
 
 getNewQuestion = () => {
 	if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-		finalScore.innerText = score;
 		localStorage.setItem('mostRecentScore', score);
-		game.classList.add('hidden');
-		end.classList.remove('hidden');
-		//return window.location.assign('../html/.html');
+		return window.location.assign('../html/ending.html');
 	}
 	questionCounter++;
-	progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
+	progressText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
 	progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 101}%`;
 
 	const questionIndex = Math.floor(Math.random() * availableQuesions.length);

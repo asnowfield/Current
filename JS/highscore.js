@@ -6,8 +6,3 @@ highScoresList.innerHTML = highScores
     return `<li class="high-score">${score.name} - ${score.score}</li>`;
   })
   .join("");
-
-function clear(){
-  localStorage.clear();
-  window.location.assign('../highscore.html');
-}

@@ -57,6 +57,7 @@
 .hud-main-text {
 	text-align: center;
 	font-family: "Poppins", sans-serif;
+	font-size: 2rem;
 }
 #progressBar {
 	width: 20rem;
