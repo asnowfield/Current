@@ -2,10 +2,12 @@
   --bs-nav-link-color: #0dfd33 !important;
   --bs-nav-link-hover-color: #ca9f0a !important;
 }
+
 .nav-pills {
   --bs-nav-pills-link-active-color: #fff !important;
   --bs-nav-pills-link-active-bg: #819a59 !important;
 }
+
 .navbar {
   position: absolute;
   display: flex;
@@ -67,19 +69,31 @@ nav div {
   visibility: hidden;
 }
 
+.row {
+  --bs-gutter-x: 0rem !important;
+}
+
+.row>* {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  margin-top: var(--bs-gutter-y);
+}
+
 .snip1577 {
   font-family: 'Montserrat', Arial, sans-serif;
   position: relative;
   display: inline-block;
   overflow: hidden;
-  margin: 10px;
   min-width: 230px;
-  max-width: 315px;
+  max-width: 470px;
   width: 100%;
   color: #fff;
   text-align: left;
   font-size: 16px;
-  background: #000;
+  margin-bottom: 0px !important;
 }
 
 .snip1577 *,
