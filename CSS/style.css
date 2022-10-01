@@ -162,3 +162,7 @@ p {
   -webkit-transition-delay: 0.24s;
   transition-delay: 0.24s;
 }
+
+@media all and (max-width:458px) {
+  /* 스크롤 위치에 있는 이미지 애니메이션 hover 기능 */
+}

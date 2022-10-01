@@ -47,13 +47,16 @@
   <section id="news" class="text-bg-secondary p-3 col-12">
     <div class="container">
       <div class="flex-center flex-column">
-        <p id="finalScore"style="font-size:4rem;"></p>
+        <p id="finalScore" style="font-size:4rem;"></p>
         <form>
           <input type="text" name="username" id="username" placeholder="NAME" autocomplete="off" />
-          <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>짱
-            알리기!</button>
+          <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>
+            <p style="font-size: 2rem;">짱 알리기!</p>
+          </button>
         </form>
-        <a class="btn btntext" href="/index.html">Main Page!!</a>
+        <a class="btn" href="/index.html">
+          <p class="btntext" style="font-size: 2rem">메인 페이지!</p>
+        </a>
       </div>
     </div>
   </section>
