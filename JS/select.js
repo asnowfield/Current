@@ -1,9 +1,6 @@
 function am() {
   localStorage.setItem('quizcode', '27');
 }
-function art() {
-  localStorage.setItem('quizcode', '25');
-}
 function book() {
   localStorage.setItem('quizcode', '10');
 }
