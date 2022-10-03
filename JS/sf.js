@@ -32,7 +32,6 @@ startGame = () => {
 	score = 0;
 	availableQuesions = [...questions];
 	getNewQuestion();
-	game.classList.remove('hidden');
 };
 
 getNewQuestion = () => {

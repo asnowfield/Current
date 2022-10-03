@@ -45,24 +45,17 @@
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-label="Slide 1" class="active"
         aria-current="true"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active" preserveAspectRatio="xMidYMid slice" aria-hidden="true"
         xmlns="http://www.w3.org/2000/svg" focusable="false">
-        <img height="100%" width="100%" src="/images/treasure_wide.webp"
+        <img height="100%" width="100%" src="/images/animal_wide.webp"
           alt="When stars born, at same time our sifi women has been created!">
       </div>
 
       <div class="carousel-item " preserveAspectRatio="xMidYMid slice" aria-hidden="true"
         xmlns="http://www.w3.org/2000/svg" focusable="false">
-        <img height="100%" width="100%" src="/images/treasure_wide.webp"
-          alt="When stars born, at same time our sifi women has been created!">
-      </div>
-
-      <div class="carousel-item" preserveAspectRatio="xMidYMid slice" aria-hidden="true"
-        xmlns="http://www.w3.org/2000/svg" focusable="false">
-        <img height="100%" width="100%" src="/images/treasure_wide.webp"
+        <img height="100%" width="100%" src="/images/animal_wide.webp"
           alt="When stars born, at same time our sifi women has been created!">
       </div>
     </div>
@@ -80,9 +73,16 @@
 
   <div id="itembox">
     <div class="row">
+      <figure class="snip1577">
+        <img src="/images/highscore_wide.webp" alt="highScores ranking!!" />
+        <figcaption>
+          <h3>HighScoresList</h3>
+        </figcaption>
+        <a href="/html/highscore.html"></a>
+      </figure>
       <div class="col">
         <figure class="snip1577">
-          <img src="/images/sf.webp" alt="snowfiled question!! Yeaaa" />
+          <img src="/images/comsci.webp" alt="snowfiled question!! Yeaaa" />
           <figcaption>
             <h3>Snowfield!</h3>
           </figcaption>
@@ -91,49 +91,488 @@
       </div>
       <div class="col">
         <figure class="snip1577">
-          <img src="/images/com_ez.webp" alt="Computer science Easy question!!" />
+          <img src="/images/comsci.webp" alt="Computer science Easy question!!" />
           <figcaption>
             <h3>Computer science!</h3>
             <h4>EASY!</h4>
           </figcaption>
-          <a href="/html/cs_ez.html"></a>
+          <a href="/html/quiz.html" onclick="cs_ez();"></a>
         </figure>
       </div>
       <div class="col">
         <figure class="snip1577">
-          <img src="/images/com_nm.webp" alt="Computer science Normal question!!" />
+          <img src="/images/comsci.webp" alt="Computer science Normal question!!" />
           <figcaption>
             <h3>Computer science!</h3>
-            <h4>NORMALl</h4>
+            <h4>NORMAL!</h4>
           </figcaption>
-          <a href="/html/cs_nm.html"></a>
+          <a href="/html/quiz.html" onclick="cs_nm();"></a>
         </figure>
       </div>
       <div class="col">
         <figure class="snip1577">
-          <img src="/images/com_hd.webp" alt="Computer science Hard question!!" />
+          <img src="/images/comsci.webp" alt="Computer science Hard question!!" />
           <figcaption>
             <h3>Computer science!</h3>
             <h4>HARD!</h4>
           </figcaption>
-          <a href="/html/cs_hd.html"></a>
+          <a href="/html/quiz.html" onclick="cs_hd();"></a>
         </figure>
       </div>
       <div class="col">
         <figure class="snip1577">
-          <img src="/images/highscore.webp" alt="highScores ranking!!" />
+          <img src="/images/animal.webp" alt="Hm" />
           <figcaption>
-            <h3>HighScoresList</h3>
+            <h3>Animal!</h3>
+            <h4>EASY!</h4>
           </figcaption>
-          <a href="/html/highscore.html"></a>
+          <a href="/html/quiz.html" onclick="am_ez();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/animal.webp" alt="Hm" />
+          <figcaption>
+            <h3>Animal!</h3>
+            <h4>NORMAL!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="am_nm();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/animal.webp" alt="Hm" />
+          <figcaption>
+            <h3>Animal!</h3>
+            <h4>HARD!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="am_hd();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/art.webp" alt="Hm" />
+          <figcaption>
+            <h3>ART!</h3>
+            <h4>EASY!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="art_ez();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/art.webp" alt="Hm" />
+          <figcaption>
+            <h3>ART!</h3>
+            <h4>NORMAL!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="art_nm();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/art.webp" alt="Hm" />
+          <figcaption>
+            <h3>ART!</h3>
+            <h4>HARD!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="art_hd();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/book.webp" alt="Hm" />
+          <figcaption>
+            <h3>BOOK!</h3>
+            <h4>EASY!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="book_ez();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/book.webp" alt="Hm" />
+          <figcaption>
+            <h3>BOOK!</h3>
+            <h4>NORMAL!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="book_nm();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/book.webp" alt="Hm" />
+          <figcaption>
+            <h3>BOOK!</h3>
+            <h4>HARD!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="book_hd();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/celebrities.webp" alt="Hm" />
+          <figcaption>
+            <h3>Celebrities!</h3>
+            <h4>EASY!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="cele_ez();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/celebrities.webp" alt="Hm" />
+          <figcaption>
+            <h3>Celebrities!</h3>
+            <h4>NORMAL!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="cele_nm();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/celebrities.webp" alt="Hm" />
+          <figcaption>
+            <h3>Celebrities!</h3>
+            <h4>HARD!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="cele_hd();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/film.webp" alt="Hm" />
+          <figcaption>
+            <h3>Film!</h3>
+            <h4>EASY!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="film_ez();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/film.webp" alt="Hm" />
+          <figcaption>
+            <h3>Film!</h3>
+            <h4>NORMAL!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="film_nm();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/film.webp" alt="Hm" />
+          <figcaption>
+            <h3>Film!</h3>
+            <h4>HARD!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="film_hd();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/general.webp" alt="Hm" />
+          <figcaption>
+            <h3>Genernal Knowledge!</h3>
+            <h4>EASY!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="gener_ez();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/general.webp" alt="Hm" />
+          <figcaption>
+            <h3>Genernal knowledge!</h3>
+            <h4>NORMAL!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="gener_nm();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/general.webp" alt="Hm" />
+          <figcaption>
+            <h3>Genernal knowledge!</h3>
+            <h4>HARD!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="gener_hd();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/game.webp" alt="Hm" />
+          <figcaption>
+            <h3>Game!</h3>
+            <h4>EASY!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="gm_ez();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/game.webp" alt="Hm" />
+          <figcaption>
+            <h3>Game!</h3>
+            <h4>NORMAL!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="gm_nm();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/game.webp" alt="Hm" />
+          <figcaption>
+            <h3>Game!</h3>
+            <h4>HARD!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="gm_hd();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/geography.webp" alt="Hm" />
+          <figcaption>
+            <h3>Geography!</h3>
+            <h4>EASY!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="gp_ez();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/geography.webp" alt="Hm" />
+          <figcaption>
+            <h3>Geography!</h3>
+            <h4>NORMAL!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="gp_nm();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/geography.webp" alt="Hm" />
+          <figcaption>
+            <h3>Geography!</h3>
+            <h4>HARD!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="gp_hd();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/math.webp" alt="Hm" />
+          <figcaption>
+            <h3>Mathmetics!</h3>
+            <h4>EASY!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="mt_ez();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/math.webp" alt="Hm" />
+          <figcaption>
+            <h3>Mathmetics!</h3>
+            <h4>NORMAL!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="mt_nm();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/math.webp" alt="Hm" />
+          <figcaption>
+            <h3>Mathmetics!</h3>
+            <h4>HARD!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="mt_hd();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/opera.webp" alt="Hm" />
+          <figcaption>
+            <h3>Musical!</h3>
+            <h4>EASY!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="musical_ez();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/opera.webp" alt="Hm" />
+          <figcaption>
+            <h3>Musical!</h3>
+            <h4>NORMAL!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="musical_nm();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/opera.webp" alt="Hm" />
+          <figcaption>
+            <h3>Musical!</h3>
+            <h4>HARD!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="musical_hd();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/music.webp" alt="Hm" />
+          <figcaption>
+            <h3>Music!</h3>
+            <h4>EASY!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="mz_ez();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/music.webp" alt="Hm" />
+          <figcaption>
+            <h3>Music!</h3>
+            <h4>NORMAL!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="mz_nm();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/music.webp" alt="Hm" />
+          <figcaption>
+            <h3>Music!</h3>
+            <h4>HARD!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="mz_hd();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/scinature.webp" alt="Hm" />
+          <figcaption>
+            <h3>Science Nature!</h3>
+            <h4>EASY!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="sn_ez();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/scinature.webp" alt="Hm" />
+          <figcaption>
+            <h3>Science Nature!</h3>
+            <h4>NORMAL!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="sn_nm();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/scinature.webp" alt="Hm" />
+          <figcaption>
+            <h3>Science Nature!</h3>
+            <h4>HARD!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="sn_hd();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/sport.webp" alt="Hm" />
+          <figcaption>
+            <h3>Sports!</h3>
+            <h4>EASY!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="sp_ez();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/sport.webp" alt="Hm" />
+          <figcaption>
+            <h3>Sports!</h3>
+            <h4>NORAL!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="sp_nm();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/sport.webp" alt="Hm" />
+          <figcaption>
+            <h3>Sports!</h3>
+            <h4>HARD!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="sp_hd();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/television.webp" alt="Hm" />
+          <figcaption>
+            <h3>Television!</h3>
+            <h4>EASY!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="tv_ez();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/television.webp" alt="Hm" />
+          <figcaption>
+            <h3>Television!</h3>
+            <h4>NORMAL!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="tv_nm();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/television.webp" alt="Hm" />
+          <figcaption>
+            <h3>Television!</h3>
+            <h4>HARD!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="tv_hd();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/vehicle.webp" alt="Hm" />
+          <figcaption>
+            <h3>Vehicle!</h3>
+            <h4>EASY!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="vehi_ez();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/vehicle.webp" alt="Hm" />
+          <figcaption>
+            <h3>Vehicle!</h3>
+            <h4>NORMAL!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="vehi_nm();"></a>
+        </figure>
+      </div>
+      <div class="col">
+        <figure class="snip1577">
+          <img src="/images/vehicle.webp" alt="Hm" />
+          <figcaption>
+            <h3>Vehicle!</h3>
+            <h4>HARD!</h4>
+          </figcaption>
+          <a href="/html/quiz.html" onclick="vehi_hd();"></a>
         </figure>
       </div>
     </div>
   </div>
   </div>
-
-
-
+  <script src="/js/select.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
     crossorigin="anonymous"></script>
