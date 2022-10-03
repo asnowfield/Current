@@ -166,9 +166,6 @@ p {
 @media all and (max-width:458px) {
   /* 스크롤 위치에 있는 이미지 애니메이션 hover 기능 */
   .snip1577 {
-    min-width: 145px;
-  }
-  .row {
-    --bs-gutter-x: 1.5rem !important;
+    min-width: 136px;
   }
 }
