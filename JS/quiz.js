@@ -44,7 +44,7 @@ fetch(
     console.error(err);
   });
 //문제 변수!!!
-const CORRECT_BONUS = 1;
+const CORRECT_BONUS = 2;
 const MAX_QUESTIONS = 10;
 
 startGame = () => {

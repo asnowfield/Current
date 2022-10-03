@@ -8,11 +8,11 @@
     "answer": 1
   },
   {
-    "question": "재밌는 놀이는?",
-    "choice1": "오목",
-    "choice2": "PUBG",
-    "choice3": "ZeroSivert",
-    "choice4": "LOL",
+    "question": "취업 준비에 정말 도움되는 방법을 제시하는 곳은?",
+    "choice1": "이불 속",
+    "choice2": "같이 취업준비하는 친구",
+    "choice3": "면접왕 이형",
+    "choice4": "퇴직왕 이형",
     "answer": 3
   },
   {
@@ -24,11 +24,19 @@
     "answer": 4
   },
   {
-    "question": "정말 예쁜 shoe는?",
-    "choice1": "/images/다운로드.jpg",
-    "choice2": "/images/다운로드.jpg",
-    "choice3": "/images/다운로드.jpg",
-    "choice4": "/images/다운로드.jpg",
+    "question": "가성비가 정말 좋은 멀티 비타민은?",
+    "choice1": "와이즐리 멀티비타민",
+    "choice2": "익스트림 멀티비타민",
+    "choice3": "솔가 멀티비타민",
+    "choice4": "커클랜드 멀티비타민",
     "answer": 4
+  },
+  {
+    "question": "가성비가 정말 좋은 마스크는?",
+    "choice1": "메디치 청정 숨편한 KF94",
+    "choice2": "닥터 피앤비 KF94",
+    "choice3": "꿈에그린 KF94",
+    "choice4": "겟레디 KF94",
+    "answer": 2
   }
 ]

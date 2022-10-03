@@ -24,7 +24,7 @@ fetch('../questions.json')
 	});
 
 //퀴즈 수!
-const CORRECT_BONUS = 1;
+const CORRECT_BONUS = 4;
 const MAX_QUESTIONS = 4;
 
 startGame = () => {
