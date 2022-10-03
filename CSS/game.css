@@ -23,7 +23,7 @@
 	cursor: pointer;
 	transform: translateY(-0.15rem);
 	transition: transform 150ms;
-	text-shadow:0.5rem 0.5rem 0 #928040da;
+	text-shadow: 0.5rem 0.5rem 0 #928040da;
 }
 
 .choice-container:hover {
