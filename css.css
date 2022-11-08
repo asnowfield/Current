@@ -1,0 +1,12 @@
+body {
+  height: 1500px;
+  font-family: 'nanumsquare';
+}
+
+div {
+  margin-top: 500px;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.5s;
+  transform: rotate(-720deg);
+}

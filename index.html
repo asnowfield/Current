@@ -2,6 +2,7 @@
 <html lang="ko">
 
 <head>
+  <link rel="stylesheet" href="css.css">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <link rel="icon" type="image/webp" href="" />
@@ -31,61 +32,9 @@
 
 <body>
   <!-- Channel Plugin Scripts -->
-  <script>
-    (function () {
-      var w = window;
-      if (w.ChannelIO) {
-        return (window.console.error || window.console.log || function () { })('ChannelIO script included twice.');
-      }
-      var ch = function () {
-        ch.c(arguments);
-      };
-      ch.q = [];
-      ch.c = function (args) {
-        ch.q.push(args);
-      };
-      w.ChannelIO = ch;
-      function l() {
-        if (w.ChannelIOInitialized) {
-          return;
-        }
-        w.ChannelIOInitialized = true;
-        var s = document.createElement('script');
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
-        s.charset = 'UTF-8';
-        var x = document.getElementsByTagName('script')[0];
-        x.parentNode.insertBefore(s, x);
-      }
-      if (document.readyState === 'complete') {
-        l();
-      } else if (window.attachEvent) {
-        window.attachEvent('onload', l);
-      } else {
-        window.addEventListener('DOMContentLoaded', l, false);
-        window.addEventListener('load', l, false);
-      }
-    })();
-    ChannelIO('boot', {
-      "pluginKey": "ca98f3b6-5453-431c-b0e1-dbe248beaa7e"
-    });
-  </script>
-  <!-- End Channel Plugin -->
-  <style>
-    body {
-      height: 1500px;
-      font-family: 'nanumsquare';
-    }
 
-    div {
-      margin-top: 500px;
-      text-align: center;
-      opacity: 0;
-      transition: all 0.5s;
-      transform: rotate(-720deg);
-    }
-  </style>
+  <!-- End Channel Plugin -->
+
   <div>
     <h1>가성비 좋은 멀티 비타민?</h1>
   </div>
@@ -95,7 +44,7 @@
 
 </body>
 <footer>
-
+  <script src="./js.js"></script>
   <script>
     let observer = new IntersectionObserver((e) => {
       e.forEach((Box) => {
