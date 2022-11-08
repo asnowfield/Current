@@ -30,6 +30,48 @@
 </head>
 
 <body>
+  <!-- Channel Plugin Scripts -->
+  <script>
+    (function () {
+      var w = window;
+      if (w.ChannelIO) {
+        return (window.console.error || window.console.log || function () { })('ChannelIO script included twice.');
+      }
+      var ch = function () {
+        ch.c(arguments);
+      };
+      ch.q = [];
+      ch.c = function (args) {
+        ch.q.push(args);
+      };
+      w.ChannelIO = ch;
+      function l() {
+        if (w.ChannelIOInitialized) {
+          return;
+        }
+        w.ChannelIOInitialized = true;
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+        s.charset = 'UTF-8';
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+      }
+      if (document.readyState === 'complete') {
+        l();
+      } else if (window.attachEvent) {
+        window.attachEvent('onload', l);
+      } else {
+        window.addEventListener('DOMContentLoaded', l, false);
+        window.addEventListener('load', l, false);
+      }
+    })();
+    ChannelIO('boot', {
+      "pluginKey": "ca98f3b6-5453-431c-b0e1-dbe248beaa7e"
+    });
+  </script>
+  <!-- End Channel Plugin -->
   <style>
     body {
       height: 1500px;
@@ -53,6 +95,7 @@
 
 </body>
 <footer>
+
   <script>
     let observer = new IntersectionObserver((e) => {
       e.forEach((Box) => {
@@ -61,7 +104,7 @@
           Box.target.style.transform = 'rotate(0deg)';
         } else {
           Box.target.style.opacity = 0;
-          Box.target.style.transform= 'rotate(-720deg)';
+          Box.target.style.transform = 'rotate(-720deg)';
         }
         // Box.intersectionRatio 보이는 만큼 값 측정. 반이면 0.5
       });
