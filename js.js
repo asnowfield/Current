@@ -1,38 +1,21 @@
-(function () {
-  var w = window;
-  if (w.ChannelIO) {
-    return (window.console.error || window.console.log || function () { })('ChannelIO script included twice.');
-  }
-  var ch = function () {
-    ch.c(arguments);
-  };
-  ch.q = [];
-  ch.c = function (args) {
-    ch.q.push(args);
-  };
-  w.ChannelIO = ch;
-  function l() {
-    if (w.ChannelIOInitialized) {
-      return;
+const options = {
+  root: null, // viewport
+  rootMargin: "0px",
+  threshold: .5,  // 50%가 viewport에 들어와 있어야 callback 실행
+}
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    console.log(entry.isIntersecting);
+    if (entry.isIntersecting) {
+      entry.target.classList.add("active");
+    } else {
+      entry.target.classList.remove("active");
     }
-    w.ChannelIOInitialized = true;
-    var s = document.createElement('script');
-    s.type = 'text/javascript';
-    s.async = true;
-    s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
-    s.charset = 'UTF-8';
-    var x = document.getElementsByTagName('script')[0];
-    x.parentNode.insertBefore(s, x);
-  }
-  if (document.readyState === 'complete') {
-    l();
-  } else if (window.attachEvent) {
-    window.attachEvent('onload', l);
-  } else {
-    window.addEventListener('DOMContentLoaded', l, false);
-    window.addEventListener('load', l, false);
-  }
-})();
-ChannelIO('boot', {
-  "pluginKey": "ca98f3b6-5453-431c-b0e1-dbe248beaa7e"
-});
+  });
+}, options);
+
+const titleList = document.querySelectorAll('h1');
+
+// 반복문을 돌려 모든 DOM에 적용
+titleList.forEach(el => observer.observe(el));

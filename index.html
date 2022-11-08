@@ -41,8 +41,12 @@
   <div>
     <h1>커클랜드 500정!</h1>
   </div>
+  <div>
+    <h1>찾아와줘서<br> 고마워유 :)</h1>
+  </div>
 
 </body>
+
 <footer>
   <script src="./js.js"></script>
   <script>
@@ -50,10 +54,8 @@
       e.forEach((Box) => {
         if (Box.isIntersecting) {
           Box.target.style.opacity = 1;
-          Box.target.style.transform = 'rotate(0deg)';
         } else {
           Box.target.style.opacity = 0;
-          Box.target.style.transform = 'rotate(-720deg)';
         }
         // Box.intersectionRatio 보이는 만큼 값 측정. 반이면 0.5
       });

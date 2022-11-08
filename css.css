@@ -1,12 +1,24 @@
 body {
-  height: 1500px;
+  margin-top: 500px;
   font-family: 'nanumsquare';
 }
 
 div {
-  margin-top: 500px;
   text-align: center;
+}
+
+h1 {
+  transform: translateX(-50%);
   opacity: 0;
-  transition: all 0.5s;
-  transform: rotate(-720deg);
+  transition: 5s;
+  margin: 1000px 0 1000px 0;
+}
+
+h1.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
