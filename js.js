@@ -19,3 +19,12 @@ const titleList = document.querySelectorAll('h1');
 
 // 반복문을 돌려 모든 DOM에 적용
 titleList.forEach(el => observer.observe(el));
+//window scroll
+window.onscroll = function () { myFunction() };
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
