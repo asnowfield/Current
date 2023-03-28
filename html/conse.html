@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="icon" type="image/webp" href="/images/fevicon.webp" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- SEO -->
+  <meta name="description" content="당신은! 얼마나 많은 지식을 기억하는가! 정말 재밌는 퀴즈를 알아보자~! 세상에서 가장 맛있는 음식은 뭘까?">
+  <meta name="keywords" content="퀴즈, 정말, 명지대, snowfield, 정보통신공학과, ICT, SW, Quiz">
+  <meta name="author" content="snowfield">
+  <!-- 카톡 페이스북 SEO -->
+  <meta property="og:locale" content="ko">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="정말? 퀴즈! Oh? Quiz!">
+  <meta property="og:description" content="당신은! 얼마나 많은 지식을 기억하는가! 정말 재밌는 퀴즈를 알아보자~! 세상에서 가장 맛있는 음식은 뭘까?">
+  <meta property="og:site_name" content="정말? 퀴즈! Oh? Quiz!">
+  <meta property="og:url" content="http://snowfield.cf">
+  <meta property="og:image" content="../images/looking.webp">
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="627" />
+  <!-- 트위터 SEO -->
+  <meta name="twitter:card" content="website">
+  <meta name="twitter:url" content="http://snowfield.cf/">
+  <meta name="twitter:title" content="정말? 퀴즈! Oh? Quiz!">
+  <meta name="twitter:description" content="당신은! 얼마나 많은 지식을 기억하는가! 정말 재밌는 퀴즈를 알아보자~! 세상에서 가장 맛있는 음식은 뭘까?">
+  <meta name="twitter:image" content="../images/looking.webp">
+  <title>정말? 퀴즈!</title>
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/game.css">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body class="bg-secondary">
+  <nav>
+    <a href="/index.html"><img src="/images/snow_logo.webp" id="snowlogo"
+        alt="Beutiful snowfield Logo! yeah!! smile~smile~"></a>
+  </nav>
+
+  <img src="/images/end_wide.webp" width="100%" class="img-fluid"
+    alt="Well Done! do you want to record your score? or not? Yeaa!">
+
+  <section id="news" class="text-bg-secondary p-3 col-12">
+    <div class="container">
+      <div class="flex-center flex-column">
+        <p id="finalScore" style="font-size:4rem;"></p>
+        <form>
+          <input type="text" name="username" id="username" placeholder="NAME" autocomplete="off" />
+          <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>
+            <p style="font-size: 2rem;">짱 알리기!</p>
+          </button>
+        </form>
+        <a class="btn" href="/index.html">
+          <p class="btntext" style="font-size: 2rem">메인 페이지!</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script src="/js/end.js"></script>
+  <script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
+</body>
+
+</html>

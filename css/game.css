@@ -1,0 +1,99 @@
+/* 선택지 */
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-center {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.choice-container {
+	display: flex;
+	margin-bottom: 0.5rem;
+	width: 100%;
+	font-size: 1.8rem;
+	background-color: #47774a;
+	border-radius: 3rem;
+}
+
+.btntext:hover {
+	cursor: pointer;
+	transform: translateY(-0.15rem);
+	transition: transform 150ms;
+	text-shadow: 0.5rem 0.5rem 0 #928040da;
+}
+
+.choice-container:hover {
+	cursor: pointer;
+	box-shadow: 0 0.4rem 1.4rem 0 #a89348da;
+	transform: translateY(-0.1rem);
+	transition: transform 150ms;
+}
+
+.choice-prefix {
+	padding: 0rem 0.5rem;
+	background-color: #8be37e6e;
+	color: #b6ffab;
+	margin-bottom: 0px;
+	border-radius: 5rem;
+}
+
+.choice-text {
+	width: 100%;
+	margin-bottom: 0px;
+}
+
+.correct {
+	background-color: #8f89ffe0;
+}
+
+.incorrect {
+	background-color: #fd939d;
+}
+
+.hud-prefix {
+	text-align: center;
+	font-size: 2rem;
+	margin-bottom: 0px;
+}
+
+.hud-main-text {
+	text-align: center;
+	font-size: 2rem;
+}
+
+#progressBar {
+	width: 100%;
+	height: 0.5rem;
+	margin-top: 1.5rem;
+	border-radius: 1rem;
+	background-color: antiquewhite;
+}
+
+#progressBarFull {
+	height: 0.5rem;
+	background-color: #47774a;
+	width: 0%;
+	border-radius: 1rem;
+}
+
+/* High score */
+#highScoresList {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 4rem;
+}
+
+.high-score {
+	font-size: 1.8rem;
+	margin-bottom: 0.5rem;
+}
+
+.high-score:hover {
+	transform: scale(1.825);
+	color: #b6ffab;
+	font-weight: 100;
+}

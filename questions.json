@@ -1,0 +1,42 @@
+[
+  {
+    "question": "가장 좋은 음식은?",
+    "choice1": "햄버거",
+    "choice2": "피자",
+    "choice3": "떡볶이&모둠튀김&어묵",
+    "choice4": "초밥",
+    "answer": 1
+  },
+  {
+    "question": "취업 준비에 정말 도움되는 방법을 제시하는 곳은?",
+    "choice1": "이불 속",
+    "choice2": "같이 취업준비하는 친구",
+    "choice3": "면접왕 이형",
+    "choice4": "퇴사한 이형",
+    "answer": 3
+  },
+  {
+    "question": "정말 예쁜 shoe는?",
+    "choice1": "Jordan 1 Low",
+    "choice2": "Dunk High",
+    "choice3": "Dunk Low",
+    "choice4": "Jordan 1 High",
+    "answer": 4
+  },
+  {
+    "question": "1일 섭취량을 만족하며 1정에 50원인 멀티 비타민은?",
+    "choice1": "와이즐리 멀티비타민",
+    "choice2": "익스트림 멀티비타민",
+    "choice3": "솔가 멀티비타민",
+    "choice4": "커클랜드 멀티비타민",
+    "answer": 4
+  },
+  {
+    "question": "택배비를 포함하여 1장당 100원인 4중 마스크는?",
+    "choice1": "메디치 청정 숨편한 KF94",
+    "choice2": "닥터 피앤비 KF94",
+    "choice3": "꿈에그린 KF94",
+    "choice4": "겟레디 KF94",
+    "answer": 2
+  }
+]
