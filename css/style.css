@@ -16,6 +16,7 @@
   height: 80vh;
 }
 
+
 .nav {
   --bs-nav-link-color: #8dd999 !important;
   --bs-nav-link-hover-color: #a89348 !important;
@@ -50,9 +51,8 @@ p {
 }
 
 @media (max-width:458px) {
-  /* 스크롤 위치에 있는 이미지 애니메이션 hover 기능 */
-  .snip1577 {
-    min-width: 136px;
+  .carousel-item img {
+    width: 100%;
   }
 }
 
