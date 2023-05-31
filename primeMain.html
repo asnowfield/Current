@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/primeMain.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="head">
+        <h2>Mi.storia</h2>
+        <input class="searchBar" type="text" />
+      </div>
+      <div class="navBar">
+        <p onclick="challengePopup()">challenge</p>
+        <a href="">my page</a>
+        <div class="imgtag">
+          <img src="/writing.png" alt="writing" />
+          <img src="/list.png" alt="list" />
+        </div>
+      </div>
+    </header>
+    <p>hot topic</p>
+    <img class="img" src="" alt="" />
+  </body>
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h2>challenge!</h2>
+      <button onclick="challenging()">글쓰러가기</button>
+    </div>
+  </div>
+  <footer>
+    <script>
+      closePopup = () => {
+        const popup = document.getElementById("popup");
+        popup.style.display = "none";
+      };
+      challengePopup = () => {
+        const popup = document.getElementById("popup");
+        popup.style.display = "block";
+      };
+      challenging = () => {
+        localStorage.setItem(challenge, "");
+      };
+    </script>
+  </footer>
+</html>
