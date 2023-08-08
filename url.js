@@ -18,7 +18,7 @@ var MyXMLHttpRequest = {
     this.createXMLHttpRequest();
     if (this.is_xhr) {
       this.xmlHttp.onreadystatechange = this.handleStateChange;
-      var urlWithPort = protocol + subdomain + domain + ":" + port;
+      var urlWithPort = protocol +"://"+ subdomain +"."+ domain + ":" + port;
       this.xmlHttp.open("GET", urlWithPort, true);
       this.xmlHttp.send(null);
     } else {
@@ -58,13 +58,66 @@ var MyXMLHttpRequest = {
   },
 };
 
+var protocol = document.getElementById("protocol");
+var subdomain = document.getElementById("subdomain");
+var domain = document.getElementById("domain");
+var port = document.getElementById("port");
+
+var protocolRegex = /^(ftp|http|https)$/;
+var subdomainRegex = /^[a-zA-Z0-9\-]+$/;
+var domainRegex = /^[a-zA-Z0-9][a-zA-Z0-9-]{0,61}[a-zA-Z0-9](?:\.[a-zA-Z]{2,})+$/;
+var portRegex = /^\d+$/;
+
+protocol.addEventListener("blur", function () {
+  var protocolValue = protocol.value;
+  if (protocolRegex.test(protocolValue)) {
+    protocol.classList.remove('invalid');
+  } else {
+    protocol.classList.add('invalid');
+
+  }
+});
+
+subdomain.addEventListener("blur", function () {
+  var subdomainValue = subdomain.value;
+  if (subdomainRegex.test(subdomainValue)) {
+    subdomain.classList.remove('invalid');
+  } else {
+    subdomain.classList.add('invalid');
+
+  }
+});
+
+domain.addEventListener("blur", function () {
+  var domainValue = domain.value;
+  if (domainRegex.test(domainValue)) {
+    domain.classList.remove('invalid');
+  } else {
+    domain.classList.add('invalid');
+  }
+});
+
+port.addEventListener("blur", function () {
+  var portValue = port.value;
+  if (portRegex.test(portValue)) {
+    port.classList.remove('invalid');
+  } else {
+    port.classList.add('invalid');
+  }
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("analysis").addEventListener("click", function () {
-    var protocol = document.getElementById("protocol").value;
-    var subdomain = document.getElementById("subdomain").value;
-    var domain = document.getElementById("domain").value;
-    var port = document.getElementById("port").value;
-    MyXMLHttpRequest.startRequest(protocol, subdomain, domain, port);
+    var protocolValue = protocol.value;
+    var subdomainValue = subdomain.value;
+    var domainValue = domain.value;
+    var portValue = port.value;
+    MyXMLHttpRequest.startRequest(
+      protocolValue,
+      subdomainValue,
+      domainValue,
+      portValue
+    );
   });
 });
 //MyXMLHttpRequest.startRequest();
