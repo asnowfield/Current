@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="/url.js"></script>
-  <title>Document</title>
-</head>
-<body>
-  <div>Request to this URL</div>
-  <label for="protocol">protocol :</label>
-  <input id="protocol" placeholder="http(s)://">
-  <label for="subdomain">subdomain :</label>
-  <input id="subdomain" placeholder="www.">
-  <label for="domain">domain :</label>
-  <input id="domain" placeholder="mcnc.co.kr">
-  <label for="port">port :</label>
-  <input id="port" placeholder="443">
-  <button id="analysis">Request</button>
-  <div><p id="resStatus">resStatus</p></div>
-  <div><p id="resText">resText</p></div>
-  <div><p id="resHeaders">resHeader</p></div>
-  <div><p id="resError">resError</p></div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/ppt.js"></script>
+    <title>Document</title>
+    <style>
+      .invalid { border-color: red; }
+    </style>
+  </head>
+  <body>
+    <div>Request to this URL</div>
+    <label for="protocol">protocol :</label>
+    <input id="protocol" placeholder="http(s)://" />
+    <label for="subdomain">subdomain :</label>
+    <input id="subdomain" placeholder="www." />
+    <label for="domain">domain :</label>
+    <input id="domain" placeholder="mcnc.co.kr" />
+    <label for="port">port :</label>
+    <input id="port" placeholder="443" />
+    <button id="analysis">Request</button>
+    <div><p id="resStatus">resStatus</p></div>
+    <div><p id="resText">resText</p></div>
+    <div><p id="resHeaders">resHeader</p></div>
+    <div><p id="resError">resError</p></div>
+  </body>
+
 </html>
